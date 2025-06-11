@@ -501,6 +501,32 @@
           }
         },
         {
+          "title": "Multi Select Option",
+          "id": "multi-select-option",
+          "plugins": {
+            "xwalk": {
+              "page": {
+                "resourceType": "core/fd/components/form/multiselect/v1/multiselect",
+                "template": {
+                  "jcr:title": "Multi Select Option",
+                  "fieldType": "multi-select",
+                  "enum": [
+                    "0",
+                    "1",
+                    "2"
+                  ],
+                  "enumNames": [
+                    "Option 1",
+                    "Option 2",
+                    "Option 3"
+                  ],
+                  "type": "string[]"
+                }
+              }
+            }
+          }
+        },
+        {
           "title": "Password",
           "id": "password",
           "plugins": {
