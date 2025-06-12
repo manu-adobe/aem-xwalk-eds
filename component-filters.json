@@ -68,7 +68,7 @@
       "text-input",
       "tnc",
       "wizard",
-      "multi-select-option"
+      "custommultiselect"
     ]
   }
 ]
