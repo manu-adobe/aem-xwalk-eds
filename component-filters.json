@@ -67,7 +67,8 @@
       "telephone-input",
       "text-input",
       "tnc",
-      "wizard"
+      "wizard",
+      "multi-select-option"
     ]
   }
 ]
