@@ -10,16 +10,14 @@ export default function decorate(element) {
   if (select) {
     // Set multiple attribute to enable multi-select functionality
     select.setAttribute('multiple', 'true');
-    
+
     // Add a class to identify this as a multi-select component
     element.classList.add('multi-select-option');
-    
+
     // Add event listener to handle selection changes
-    select.addEventListener('change', () => {
-      const selectedOptions = Array.from(select.selectedOptions).map(option => option.value);
+    select.addEventListener('change', () => { const selectedOptions = Array.from(select.selectedOptions).map(option => option.value);
       // Store selected values as a data attribute for easy access
-      select.dataset.selectedValues = JSON.stringify(selectedOptions);
-    });
+      select.dataset.selectedValues = JSON.stringify(selectedOptions);});
   }
   return element;
 }
@@ -31,12 +29,12 @@ export default function decorate(element) {
  */
 export function createMultiSelectOption(fd) {
   const select = document.createElement('select');
-  
+
   // Set multiple attribute to enable multi-select functionality
   select.setAttribute('multiple', 'true');
-  
+
   // Use the existing dropdown creation function
   createDropdownUsingEnum(fd, select);
-  
+
   return select;
 }
