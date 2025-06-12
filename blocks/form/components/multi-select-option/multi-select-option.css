@@ -1,0 +1,61 @@
+/* Multi Select Option styling */
+:root {
+  --color-multi-select-border: #ecedf3;
+  --color-multi-select-focus: #1c3fca;
+  --color-multi-select-option-hover: #f3f6fd;
+  --color-multi-select-option-selected: #e6eeff;
+}
+
+main .form .multi-select-option select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--color-multi-select-border);
+  border-radius: 4px;
+  min-height: 120px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+main .form .multi-select-option select:focus {
+  outline: none;
+  border-color: var(--color-multi-select-focus);
+  box-shadow: 0 0 0 2px rgba(28, 63, 202, 0.2);
+}
+
+main .form .multi-select-option select option {
+  padding: 8px;
+  cursor: pointer;
+}
+
+main .form .multi-select-option select option:hover {
+  background-color: var(--color-multi-select-option-hover);
+}
+
+main .form .multi-select-option select option:checked {
+  background-color: var(--color-multi-select-option-selected);
+  color: var(--color-multi-select-focus);
+  font-weight: 500;
+}
+
+/* Help text styling */
+main .form .multi-select-option .field-description {
+  font-size: 0.875rem;
+  margin-top: 4px;
+  color: #666;
+}
+
+/* Error state styling */
+main .form .multi-select-option.field-invalid select {
+  border-color: #e53935;
+}
+
+main .form .multi-select-option.field-invalid .field-description {
+  color: #e53935;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  main .form .multi-select-option select {
+    min-height: 100px;
+  }
+}
