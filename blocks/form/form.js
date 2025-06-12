@@ -1,6 +1,5 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
 import transferRepeatableDOM, { insertAddButton, insertRemoveButton } from './components/repeat/repeat.js';
-import { createMultiSelectOption } from './components/multi-select-option/multi-select-option.js';
 import { emailPattern, getSubmitBaseUrl, SUBMISSION_SERVICE } from './constant.js';
 import GoogleReCaptcha from './integrations/recaptcha.js';
 import componentDecorator from './mappings.js';
@@ -141,7 +140,6 @@ const fieldRenderers = {
   'checkbox-group': createRadioOrCheckboxGroup,
   image: createImage,
   heading: createHeading,
-  'multi-select': withFieldWrapper(createMultiSelectOption),
 };
 
 function colSpanDecorator(field, element) {

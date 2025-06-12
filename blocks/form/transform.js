@@ -176,7 +176,6 @@ export default class DocBasedFormToAF {
     ['datetime-local', 'date-input'],
     ['file', 'file-input'],
     ['select', 'drop-down'],
-    ['multiselect', 'multi-select'],
     ['radio-group', 'radio-group'],
     ['checkbox-group', 'checkbox-group'],
     ['plain-text', 'plain-text'],
